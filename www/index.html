@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<meta name="description" content="Pantalla de inicio">
+	<title>Index</title>
+	<script src="js/init.js"></script>
+	<script>load_view('vistas/includes.html?v=1.47')</script>
+	<style>
+		.btn-secondary-outline{
+			background: #fff;
+			color: #db0001;
+			border: none;
+		}
+		@media (max-width: 991px){
+			.cid-r8Sw8I3z8W img {
+				height: 6rem !important;
+			}
+		}
+		body{
+			background: #741b75;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<img src="img/esmedicina.png" alt="" class="img-fluid">
+				<div class="container text-center">
+					<i class="fa fa-cog fa-4x fa-spin" style="color:#fff;"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<input name="animation" type="hidden">
+	<script>
+		$(document).ready(function() {
+			h = $(this).height();
+			$('.img-fluid').css('margin-top', (h/2-70));
+		});
+
+		setTimeout(function(){
+			$('body').hide().fadeIn('slow');
+			if (userget()) {
+				location.href="home.html";
+			}else{
+				location.href="opciones.html";
+			}
+		}, 2000);
+	</script>
+</body>
+</html>

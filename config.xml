@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="techconsultores.esmedicina" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Esmedicina</name>
+    <description>
+		Sistema para busqueda de medicamentos
+	</description>
+    <author email="dev@techconsultores.net" href="techconsultores.net">
+		TechConsultores
+	</author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
+    <platform name="android">
+        <icon qualifier="ldpi" src="res/icons/android/Icon-36.png" />
+        <icon qualifier="mdpi" src="res/icons/android/Icon-48.png" />
+        <icon qualifier="hdpi" src="res/icons/android/Icon-72.png" />
+        <icon qualifier="xhdpi" src="res/icons/android/Icon-96.png" />
+        <icon qualifier="xxhdpi" src="res/icons/android/Icon-144.png" />
+        <icon qualifier="xxxhdpi" src="res/icons/android/Icon-192.png" />
+    </platform>
+    <platform name="ios">
+        <icon height="57" platform="ios" src="res/icons/ios/Icon-57.png" width="57" />
+        <icon height="114" platform="ios" src="res/icons/ios/Icon114.png" width="114" />
+        <icon height="40" platform="ios" src="res/icons/ios/Icon-40.png" width="40" />
+        <icon height="80" platform="ios" src="res/icons/ios/Icon-76@2x.png" width="80" />
+        <icon height="50" platform="ios" src="res/icons/ios/Icon-50.png" width="50" />
+        <icon height="100" platform="ios" src="res/icons/ios/Icon-100.png" width="100" />
+        <icon height="60" platform="ios" src="res/icons/ios/Icon-60.png" width="60" />
+        <icon height="120" platform="ios" src="res/icons/ios/Icon-120.png" width="120" />
+        <icon height="180" platform="ios" src="res/icons/ios/Icon-180.png" width="180" />
+        <icon height="72" platform="ios" src="res/icons/ios/Icon-72.png" width="72" />
+        <icon height="144" platform="ios" src="res/icons/ios/Icon-144.png" width="144" />
+        <icon height="76" platform="ios" src="res/icons/ios/Icon-76.png" width="76" />
+        <icon height="152" platform="ios" src="res/icons/ios/Icon-152.png" width="152" />
+        <icon height="29" platform="ios" src="res/icons/ios/Icon-29.png" width="29" />
+        <icon height="58" platform="ios" src="res/icons/ios/Icon-58.png" width="58" />
+        <icon height="87" platform="ios" src="res/icons/ios/Icon-88.png" width="87" />
+    </platform>
+    <engine name="android" spec="^7.1.4" />
+</widget>
